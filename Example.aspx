@@ -25,7 +25,7 @@ public class Example.cs : System.Web.UI.Page
                           Name = user.Name + " " +user.Surname,
                           Email = user.Email,
                       };
-              return args.ApplyArgs(q);
+              return Args.ApplyArgs(q); // extension method is in PagerArgs class
          }
          // for updating data you need to call the following function (for example after deleting or upding record etc)
          // pgr.RefreshData();
